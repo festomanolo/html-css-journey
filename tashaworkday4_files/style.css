@@ -1,0 +1,41 @@
+h2{
+    color: red;
+}
+
+.blue{
+    color: blue;
+}
+
+.blue:hover{
+    color:black;
+}
+
+.italic{
+    font-style:italic;
+}
+
+.glowing{
+    text-shadow: 0 0 3px blue;
+    /*text-shadow: x-offset y-offset blur-amount color*/
+}
+
+.:ok_hand:{
+    font-family:arial;
+}
+
+#green{
+    color:green;
+    font-size:3vmin;
+    /*
+    px: pixels
+    %: percent
+    vh,vw,vmin: 
+        vh: viewport height;
+        vw: viewport width;
+        vmin: whichever of the above two is smallest.
+    */
+}
+/*
+Selector{
+    property:value;
+}

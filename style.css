@@ -1,0 +1,152 @@
+body {
+    background: rgb(244, 211, 94);
+    color: rgb(31, 39, 27);
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+}
+
+h2 {
+    color: rgb(25, 100, 126);
+    font-family: 'Rock Salt', cursive;
+    margin: 50px 0;
+}
+
+a {
+    color: rgb(25, 100, 126);
+}
+
+h3 {
+    color: rgb(40, 175, 176)
+}
+
+/*TEXT OF COMMENT*/
+/*The above is the syntax for a comment in CSS*/
+
+.blue {
+    color: blue;
+}
+
+.blue:hover {
+    color: black;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.glowing {
+    text-shadow: 0 0 3px blue;
+    /*text-shadow: x-offset y-offset blur-amount color*/
+}
+
+.👌 {
+    font-family: arial;
+}
+
+#green {
+    color: green;
+    font-size: 3vmin;
+    /*
+    px: pixels
+    %: percent
+    vh,vw,vmin: 
+        vh: viewport height;
+        vw: viewport width;
+        vmin: whichever of the above two is smallest.
+    */
+}
+
+/*
+Selector{
+    property:value;
+}
+
+*/
+img {
+    display: block;
+    /* margin:auto; */
+    /* margin-top:50px; */
+    max-height: 500px;
+}
+
+.boxmodel {
+    width: 100px;
+    height: 100px;
+    background: red;
+    margin: 50px auto;
+    border: 1px solid black;
+    box-shadow: 0 0 10px black;
+}
+
+.cakes {
+    display: flex;
+    flex-direction: column-reverse;
+    height: 100vh;
+    flex-wrap: wrap;
+    /* gap: 90px 16px; */
+}
+
+/* .chococake {
+    border: 40px solid rgb(0, 140, 255);
+    padding: 100px;
+    margin: 100px;
+    width: 200px;
+} */
+
+.parentflex {
+    display: flex;
+    flex-direction: column;
+}
+
+.alignmentstuff {
+    width: 100vw;
+    height: 100vh;
+    background: blue;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* justify-content: space-evenly ; */
+}
+p {
+    font-size: 96px;
+    order: 3;
+}
+.grow{
+    background-color: red;
+    flex: 1 1 400px;
+    height: 100%;
+}
+.spacetaker {
+    background-color: blueviolet;
+    height: 100%;
+    /* width: 420px; */
+    flex: 10 0 200px;
+
+}
+
+#shrinkingcake{
+    width:500px;
+    animation: changesize 10s;
+
+    /*
+    animation-name: changesize;
+    animation-duration: 5s;
+    */
+}
+  
+@keyframes changesize{
+    0% {
+        margin-left:0;
+        transform:rotate(0deg);
+    }
+
+    50% {
+        margin-left:calc(100vw - 500px);
+        transform:rotate(45deg);
+    }
+
+    100%{
+        margin-left:0;
+        transform:rotate(90deg);
+    }
+}
